@@ -185,7 +185,8 @@ Todo ello está en `.gitignore` con el motivo anotado junto a cada bloque.
 
 El **código** de este repositorio se publica bajo licencia **MIT** (ver
 [`LICENSE`](LICENSE)): puedes usarlo, modificarlo y redistribuirlo citando la
-autoría.
+autoría. El fichero contiene únicamente el texto de la licencia, sin añadidos,
+para que GitHub la detecte; la salvedad sobre los datos es la que sigue.
 
 Los **datos no están cubiertos por esa licencia**. Los ficheros de activos
 derivan de OpenStreetMap y están sujetos a la **Open Database License (ODbL)**,

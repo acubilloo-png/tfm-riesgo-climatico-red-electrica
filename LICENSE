@@ -19,22 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-NOTA SOBRE LOS DATOS
-
-Esta licencia MIT cubre el CÓDIGO de este repositorio.
-
-Los datos incluidos no son todos del autor y no se relicencian aquí:
-
-  · apoyos_electricos_comunidad_valenciana.csv y
-    subestaciones_comunidad_valenciana.csv derivan de OpenStreetMap y están
-    sujetos a la Open Database License (ODbL), que exige atribución a
-    "OpenStreetMap contributors" y compartir igual las bases derivadas.
-
-  · Los resultados en JSON, los CSV de perfiles y las figuras derivan además de
-    PATRICOVA (Generalitat Valenciana), del atlas de viento extremo de Pryor y
-    Barthelmie, de AEMET OpenData, del Copernicus DEM GLO-30 y de la Red de
-    Cauces del Institut Cartogràfic Valencià. Cada fuente conserva sus propios
-    términos, citados en el README.
