@@ -174,12 +174,6 @@ documento de la memoria y solo son útiles con el `.docx`, que no se versiona.
 - **OpenStreetMap cambia de forma continua**: una extracción posterior no
   devolverá necesariamente los mismos 38 939 activos.
 
-## Lo que no está en el repositorio
-
-Los borradores de la memoria (19 ficheros, 86 MB), las tablas intermedias
-pesadas (42 MB, regenerables con la cadena anterior) y los datos brutos de AEMET,
-cuya redistribución es una decisión de licencia distinta de publicar el código.
-Todo ello está en `.gitignore` con el motivo anotado junto a cada bloque.
 
 ## Licencia y atribución
 
