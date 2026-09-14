@@ -10,6 +10,25 @@ Combina dos amenazas de naturaleza distinta, inundación y viento extremo, en un
 Trabajo de Fin de Máster. El código, los datos derivados y las figuras que
 sustentan la memoria están aquí; la memoria en sí no se versiona.
 
+## En un vistazo
+
+**Qué sale.** De los 38 939 activos de la red, el índice señala los 1 957 que
+superan el percentil 95, entre ellos 19 subestaciones.
+
+![Activos de mayor riesgo climático compuesto](figuras/fig7_riesgo_compuesto.png)
+
+**Para qué sirve.** Convierte un inventario inabarcable en una lista de
+inspección manejable.
+
+![Del inventario completo a la lista corta](figuras/docfig24_embudo.png)
+
+**Qué tan bien funciona.** Contrastado contra la DANA de octubre de 2024, el
+resultado es deliberadamente asimétrico: la rama de inundación acierta y la
+eólica falla, y el porqué de ese fallo es el hallazgo más interesante del
+trabajo.
+
+![Contraste frente al episodio de octubre de 2024](figuras/docfig25_validacion_dana.png)
+
 ## Qué produce
 
 | Salida | Fichero |
@@ -162,7 +181,16 @@ pesadas (42 MB, regenerables con la cadena anterior) y los datos brutos de AEMET
 cuya redistribución es una decisión de licencia distinta de publicar el código.
 Todo ello está en `.gitignore` con el motivo anotado junto a cada bloque.
 
-## Atribución
+## Licencia y atribución
 
-Los datos de partida son de sus respectivos titulares, citados en la tabla de
-fuentes. Este repositorio contiene el código y los resultados derivados.
+El **código** de este repositorio se publica bajo licencia **MIT** (ver
+[`LICENSE`](LICENSE)): puedes usarlo, modificarlo y redistribuirlo citando la
+autoría.
+
+Los **datos no están cubiertos por esa licencia**. Los ficheros de activos
+derivan de OpenStreetMap y están sujetos a la **Open Database License (ODbL)**,
+que obliga a atribuir a *OpenStreetMap contributors* y a compartir igual
+cualquier base derivada. El resto de resultados incorporan además PATRICOVA, el
+atlas de Pryor y Barthelmie, AEMET OpenData, el Copernicus DEM GLO-30 y la Red
+de Cauces del Institut Cartogràfic Valencià; cada fuente conserva sus propios
+términos, y están citadas en la tabla de fuentes de más arriba.
