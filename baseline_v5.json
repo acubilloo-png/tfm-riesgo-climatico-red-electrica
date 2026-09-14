@@ -1,0 +1,303 @@
+{
+  "n_activos": 38939,
+  "pesos": {
+    "inundacion": 0.6,
+    "viento": 0.4
+  },
+  "crs": {
+    "mediana": 4.792,
+    "media": 5.465,
+    "max": 72.842,
+    "p95": 10.453,
+    "p99": 24.038
+  },
+  "amenaza_dominante": {
+    "conjunto": {
+      "n": 38939,
+      "viento": 35410,
+      "pct_viento": 90.94
+    },
+    "top5pct": {
+      "n": 1947,
+      "viento": 533,
+      "pct_viento": 27.38
+    },
+    "top1pct": {
+      "n": 390,
+      "viento": 1,
+      "pct_viento": 0.26
+    }
+  },
+  "validacion_dana": {
+    "Catadau": {
+      "n_activos": 149,
+      "viento_medio_ms": 4.293,
+      "viento_medio_kmh": 15.5,
+      "percentil_viento": 63.4,
+      "H_viento_medio": 0.1432,
+      "CRS_mediano": 4.482,
+      "CRS_percentil_medio": 45.8,
+      "n_en_top5pct": 0
+    },
+    "Quart de Poblet": {
+      "n_activos": 1012,
+      "viento_medio_ms": 3.871,
+      "viento_medio_kmh": 13.9,
+      "percentil_viento": 42.4,
+      "H_viento_medio": 0.1147,
+      "CRS_mediano": 5.807,
+      "CRS_percentil_medio": 68.1,
+      "n_en_top5pct": 71
+    }
+  },
+  "perfiles": {
+    "barrido": [
+      {
+        "k": 2,
+        "inercia": 84889.68101043081,
+        "silhouette": 0.4186
+      },
+      {
+        "k": 3,
+        "inercia": 56717.564596418,
+        "silhouette": 0.4112
+      },
+      {
+        "k": 4,
+        "inercia": 38646.05714912847,
+        "silhouette": 0.4081
+      },
+      {
+        "k": 5,
+        "inercia": 30559.29966214464,
+        "silhouette": 0.3722
+      },
+      {
+        "k": 6,
+        "inercia": 25585.567622184753,
+        "silhouette": 0.3612
+      },
+      {
+        "k": 7,
+        "inercia": 21233.914699182093,
+        "silhouette": 0.3677
+      },
+      {
+        "k": 8,
+        "inercia": 18378.07452282173,
+        "silhouette": 0.3366
+      },
+      {
+        "k": 9,
+        "inercia": 16408.372841180855,
+        "silhouette": 0.3342
+      },
+      {
+        "k": 10,
+        "inercia": 14693.98435497844,
+        "silhouette": 0.3464
+      },
+      {
+        "k": 11,
+        "inercia": 13127.114753515556,
+        "silhouette": 0.3443
+      },
+      {
+        "k": 12,
+        "inercia": 12062.795596370703,
+        "silhouette": 0.338
+      },
+      {
+        "k": 13,
+        "inercia": 10995.790906659662,
+        "silhouette": 0.3301
+      },
+      {
+        "k": 14,
+        "inercia": 10148.306285683535,
+        "silhouette": 0.3312
+      },
+      {
+        "k": 15,
+        "inercia": 9395.222172830265,
+        "silhouette": 0.3243
+      }
+    ],
+    "k_optimo": 2,
+    "silhouette": 0.4186,
+    "tabla": [
+      {
+        "perfil": 1,
+        "n": 10294,
+        "n_subestaciones": 183,
+        "pct_dominante_viento": 81.4,
+        "H_inundacion_medio": 0.1096,
+        "H_viento_medio": 0.1018,
+        "viento_medio_ms": 3.632,
+        "densidad_media": 764.6,
+        "CRS_mediano": 5.19,
+        "CRS_max": 72.842,
+        "provincia_dominante": "Castellón"
+      },
+      {
+        "perfil": 2,
+        "n": 28645,
+        "n_subestaciones": 425,
+        "pct_dominante_viento": 94.4,
+        "H_inundacion_medio": 0.0288,
+        "H_viento_medio": 0.1503,
+        "viento_medio_ms": 4.292,
+        "densidad_media": 220.4,
+        "CRS_mediano": 4.67,
+        "CRS_max": 30.507,
+        "provincia_dominante": "Castellón"
+      }
+    ]
+  },
+  "reparto_provincial_top5": {
+    "Alicante": {
+      "n": 140,
+      "pct_del_top5": 7.2
+    },
+    "Castellón": {
+      "n": 1095,
+      "pct_del_top5": 56.2
+    },
+    "Valencia": {
+      "n": 712,
+      "pct_del_top5": 36.6
+    }
+  },
+  "viento_medio": {
+    "min": {
+      "ms": 0.745,
+      "kmh": 2.7
+    },
+    "mediana": {
+      "ms": 4.023,
+      "kmh": 14.5
+    },
+    "media": {
+      "ms": 4.117,
+      "kmh": 14.8
+    },
+    "p90": {
+      "ms": 5.242,
+      "kmh": 18.9
+    },
+    "p95": {
+      "ms": 5.725,
+      "kmh": 20.6
+    },
+    "p99": {
+      "ms": 7.227,
+      "kmh": 26.0
+    },
+    "max": {
+      "ms": 11.248,
+      "kmh": 40.5
+    }
+  },
+  "top20_subestaciones": [
+    {
+      "osm_id": 1433299782,
+      "provincia": "Valencia",
+      "CRS": 72.842
+    },
+    {
+      "osm_id": 1332158318,
+      "provincia": "Valencia",
+      "CRS": 72.055
+    },
+    {
+      "osm_id": 427453434,
+      "provincia": "Valencia",
+      "CRS": 71.549
+    },
+    {
+      "osm_id": 1454613716,
+      "provincia": "Valencia",
+      "CRS": 70.704
+    },
+    {
+      "osm_id": 1296737218,
+      "provincia": "Alicante",
+      "CRS": 53.355
+    },
+    {
+      "osm_id": 333368504,
+      "provincia": "Alicante",
+      "CRS": 48.988
+    },
+    {
+      "osm_id": 165517087,
+      "provincia": "Valencia",
+      "CRS": 47.214
+    },
+    {
+      "osm_id": 1258994988,
+      "provincia": "Valencia",
+      "CRS": 46.744
+    },
+    {
+      "osm_id": 1259492018,
+      "provincia": "Valencia",
+      "CRS": 34.034
+    },
+    {
+      "osm_id": 77594207,
+      "provincia": "Valencia",
+      "CRS": 29.586
+    },
+    {
+      "osm_id": 789683722,
+      "provincia": "Valencia",
+      "CRS": 27.787
+    },
+    {
+      "osm_id": 789683723,
+      "provincia": "Valencia",
+      "CRS": 27.77
+    },
+    {
+      "osm_id": 1362896703,
+      "provincia": "Alicante",
+      "CRS": 25.557
+    },
+    {
+      "osm_id": 1203129733,
+      "provincia": "Valencia",
+      "CRS": 24.323
+    },
+    {
+      "osm_id": 1222499475,
+      "provincia": "Castellón",
+      "CRS": 15.917
+    },
+    {
+      "osm_id": 552181500,
+      "provincia": "Alicante",
+      "CRS": 15.709
+    },
+    {
+      "osm_id": 15553111,
+      "provincia": "Alicante",
+      "CRS": 15.026
+    },
+    {
+      "osm_id": 583151114,
+      "provincia": "Valencia",
+      "CRS": 14.14
+    },
+    {
+      "osm_id": 1258841550,
+      "provincia": "Valencia",
+      "CRS": 14.06
+    },
+    {
+      "osm_id": 1272045306,
+      "provincia": "Alicante",
+      "CRS": 13.998
+    }
+  ]
+}

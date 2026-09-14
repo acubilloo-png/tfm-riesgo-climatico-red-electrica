@@ -1,0 +1,337 @@
+{
+  "crs": {
+    "v5": {
+      "mediana": 4.792,
+      "media": 5.465,
+      "max": 72.842,
+      "p95": 10.453,
+      "p99": 24.038
+    },
+    "v6": {
+      "mediana": 11.891,
+      "media": 12.869,
+      "max": 89.197,
+      "p95": 18.71,
+      "p99": 36.479
+    },
+    "control_minmax_sobre_v50": {
+      "mediana": 10.273,
+      "max": 88.235
+    },
+    "v6_sin_escalar": {
+      "mediana": 11.891,
+      "max": 89.197
+    }
+  },
+  "H_viento": {
+    "v5_mediana": 0.1241,
+    "v6_mediana": 0.4865,
+    "v6_minmax_mediana": 0.3912
+  },
+  "amenaza_dominante": {
+    "conjunto_v5": {
+      "n": 38939,
+      "viento": 35410,
+      "pct_viento": 90.94
+    },
+    "conjunto_v6w5": {
+      "n": 38939,
+      "viento": 37905,
+      "pct_viento": 97.34
+    },
+    "conjunto_v6": {
+      "n": 38939,
+      "viento": 37697,
+      "pct_viento": 96.81
+    },
+    "top5pct_v5": {
+      "n": 1947,
+      "viento": 533,
+      "pct_viento": 27.38
+    },
+    "top5pct_v6w5": {
+      "n": 1947,
+      "viento": 941,
+      "pct_viento": 48.33
+    },
+    "top5pct_v6": {
+      "n": 1957,
+      "viento": 823,
+      "pct_viento": 42.05
+    },
+    "top1pct_v5": {
+      "n": 390,
+      "viento": 1,
+      "pct_viento": 0.26
+    },
+    "top1pct_v6w5": {
+      "n": 391,
+      "viento": 12,
+      "pct_viento": 3.07
+    },
+    "top1pct_v6": {
+      "n": 390,
+      "viento": 0,
+      "pct_viento": 0.0
+    }
+  },
+  "reparto_provincial_top5": {
+    "v5": {
+      "Alicante": {
+        "n": 140,
+        "pct": 7.2
+      },
+      "Castellón": {
+        "n": 1095,
+        "pct": 56.2
+      },
+      "Valencia": {
+        "n": 712,
+        "pct": 36.6
+      }
+    },
+    "v6": {
+      "Alicante": {
+        "n": 38,
+        "pct": 1.9
+      },
+      "Castellón": {
+        "n": 1135,
+        "pct": 58.0
+      },
+      "Valencia": {
+        "n": 784,
+        "pct": 40.1
+      }
+    }
+  },
+  "top20_subestaciones": {
+    "v5": [
+      {
+        "osm_id": 1433299782,
+        "provincia": "Valencia",
+        "CRS": 72.842
+      },
+      {
+        "osm_id": 1332158318,
+        "provincia": "Valencia",
+        "CRS": 72.055
+      },
+      {
+        "osm_id": 427453434,
+        "provincia": "Valencia",
+        "CRS": 71.549
+      },
+      {
+        "osm_id": 1454613716,
+        "provincia": "Valencia",
+        "CRS": 70.704
+      },
+      {
+        "osm_id": 1296737218,
+        "provincia": "Alicante",
+        "CRS": 53.355
+      },
+      {
+        "osm_id": 333368504,
+        "provincia": "Alicante",
+        "CRS": 48.988
+      },
+      {
+        "osm_id": 165517087,
+        "provincia": "Valencia",
+        "CRS": 47.214
+      },
+      {
+        "osm_id": 1258994988,
+        "provincia": "Valencia",
+        "CRS": 46.744
+      },
+      {
+        "osm_id": 1259492018,
+        "provincia": "Valencia",
+        "CRS": 34.034
+      },
+      {
+        "osm_id": 77594207,
+        "provincia": "Valencia",
+        "CRS": 29.586
+      },
+      {
+        "osm_id": 789683722,
+        "provincia": "Valencia",
+        "CRS": 27.787
+      },
+      {
+        "osm_id": 789683723,
+        "provincia": "Valencia",
+        "CRS": 27.77
+      },
+      {
+        "osm_id": 1362896703,
+        "provincia": "Alicante",
+        "CRS": 25.557
+      },
+      {
+        "osm_id": 1203129733,
+        "provincia": "Valencia",
+        "CRS": 24.323
+      },
+      {
+        "osm_id": 1222499475,
+        "provincia": "Castellón",
+        "CRS": 15.917
+      },
+      {
+        "osm_id": 552181500,
+        "provincia": "Alicante",
+        "CRS": 15.709
+      },
+      {
+        "osm_id": 15553111,
+        "provincia": "Alicante",
+        "CRS": 15.026
+      },
+      {
+        "osm_id": 583151114,
+        "provincia": "Valencia",
+        "CRS": 14.14
+      },
+      {
+        "osm_id": 1258841550,
+        "provincia": "Valencia",
+        "CRS": 14.06
+      },
+      {
+        "osm_id": 1272045306,
+        "provincia": "Alicante",
+        "CRS": 13.998
+      }
+    ],
+    "v6": [
+      {
+        "osm_id": 1433299782,
+        "provincia": "Valencia",
+        "CRS_v6": 89.197
+      },
+      {
+        "osm_id": 427453434,
+        "provincia": "Valencia",
+        "CRS_v6": 88.673
+      },
+      {
+        "osm_id": 1332158318,
+        "provincia": "Valencia",
+        "CRS_v6": 88.189
+      },
+      {
+        "osm_id": 1454613716,
+        "provincia": "Valencia",
+        "CRS_v6": 86.657
+      },
+      {
+        "osm_id": 1296737218,
+        "provincia": "Alicante",
+        "CRS_v6": 63.28
+      },
+      {
+        "osm_id": 333368504,
+        "provincia": "Alicante",
+        "CRS_v6": 59.08
+      },
+      {
+        "osm_id": 165517087,
+        "provincia": "Valencia",
+        "CRS_v6": 58.895
+      },
+      {
+        "osm_id": 1258994988,
+        "provincia": "Valencia",
+        "CRS_v6": 57.222
+      },
+      {
+        "osm_id": 1259492018,
+        "provincia": "Valencia",
+        "CRS_v6": 43.482
+      },
+      {
+        "osm_id": 77594207,
+        "provincia": "Valencia",
+        "CRS_v6": 38.377
+      },
+      {
+        "osm_id": 789683722,
+        "provincia": "Valencia",
+        "CRS_v6": 35.976
+      },
+      {
+        "osm_id": 789683723,
+        "provincia": "Valencia",
+        "CRS_v6": 35.954
+      },
+      {
+        "osm_id": 1362896703,
+        "provincia": "Alicante",
+        "CRS_v6": 31.808
+      },
+      {
+        "osm_id": 1203129733,
+        "provincia": "Valencia",
+        "CRS_v6": 30.148
+      },
+      {
+        "osm_id": 1222499475,
+        "provincia": "Castellón",
+        "CRS_v6": 22.004
+      },
+      {
+        "osm_id": 583151114,
+        "provincia": "Valencia",
+        "CRS_v6": 20.148
+      },
+      {
+        "osm_id": 1258841550,
+        "provincia": "Valencia",
+        "CRS_v6": 20.05
+      },
+      {
+        "osm_id": 552181500,
+        "provincia": "Alicante",
+        "CRS_v6": 19.912
+      },
+      {
+        "osm_id": 15553111,
+        "provincia": "Alicante",
+        "CRS_v6": 19.346
+      },
+      {
+        "osm_id": 421990994,
+        "provincia": "Valencia",
+        "CRS_v6": 18.677
+      }
+    ],
+    "entran_en_v6": [
+      421990994
+    ],
+    "salen_en_v6": [
+      1272045306
+    ],
+    "se_mantienen": 19
+  },
+  "perfiles": {
+    "v5_subestaciones": {
+      "k": 2,
+      "silhouette": 0.4186
+    },
+    "v6": {
+      "subestaciones": {
+        "k": 7,
+        "silhouette": 0.5127
+      },
+      "todos_los_activos": {
+        "k": 2,
+        "silhouette": 0.6647
+      }
+    }
+  }
+}

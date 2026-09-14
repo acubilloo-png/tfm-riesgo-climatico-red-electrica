@@ -1,0 +1,87 @@
+# ============================================================================
+# Credenciales — NUNCA deben entrar en el repositorio
+# ============================================================================
+# Las claves de API se guardan fuera de la carpeta del proyecto, en ~/TFM_local/,
+# porque esta carpeta sincroniza con la nube. Estos patrones son una segunda
+# barrera por si alguna vez se copia una aquí.
+*api_key*
+*apikey*
+.cdsapirc
+.aemetrc
+*.key
+*.pem
+secrets.*
+.env
+
+# ============================================================================
+# Datos voluminosos y redescargables
+# ============================================================================
+# Viven en ~/TFM_local/data/ (fuera de la carpeta sincronizada). Estos patrones
+# cubren el caso de que se generen por error dentro del proyecto.
+data/
+*.tif
+*.nc
+*.grib
+*.grb
+dem/
+patricova/
+viento_extremo/
+
+# ============================================================================
+# Entorno de Python
+# ============================================================================
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.claude/
+
+# ============================================================================
+# Cachés de descarga y ficheros temporales
+# ============================================================================
+cache_aemet/
+*.parcial
+*.tmp
+~$*.docx
+
+# ============================================================================
+# La memoria y sus borradores
+# ============================================================================
+# Diecinueve versiones del documento, 86 MB, varias con comentarios internos y
+# con la revisión del director. No son código y no aportan a la reproducibilidad
+# del piloto. Para publicar la versión final, añade una excepción, por ejemplo:
+#     !20260906_TFM_final.docx
+*.docx
+old/
+
+# ============================================================================
+# Salidas derivadas pesadas: se regeneran ejecutando la cadena
+# ============================================================================
+# 42 MB de tablas intermedias que cualquiera puede reconstruir con los scripts.
+# Los CSV pequeños de resultados (perfiles, clusters, estaciones, V50 por
+# estación) sí se versionan: son la salida que se cita en la memoria.
+activos_con_crs.csv
+activos_con_crs_v6.csv
+activos_con_variables_climaticas.csv
+activos_con_topografia.csv
+shap_valores.npy
+shap_muestra.csv
+
+# ============================================================================
+# Datos de terceros redistribuidos
+# ============================================================================
+# 125.328 registros diarios descargados de AEMET OpenData. Se excluyen porque
+# republicarlos es una decisión de licencia distinta de publicar el código: los
+# términos de AEMET exigen atribución y acotan la redistribución. Se regeneran
+# con 03_descargar_rachas_aemet.py y una clave propia.
+rachas_aemet_cv.csv
+
+# ============================================================================
+# Excluido a propósito, no por tamaño
+# ============================================================================
+# AUTORIA.md documenta qué parte de la redacción de la memoria es tuya y qué
+# parte no. Es una decisión tuya publicarlo o no, y por eso no va al repositorio
+# por omisión. Si quieres incluirlo, borra la línea siguiente.
+AUTORIA.md

@@ -1,0 +1,87 @@
+{
+  "version": "v6",
+  "cambio": "la peligrosidad por viento pasa de min-max sobre la velocidad media anual del Global Wind Atlas a normalizacion absoluta sobre la velocidad de retorno a 50 anos",
+  "fuente_v50": "Pryor y Barthelmie (2021), Zenodo 10.5281/zenodo.4306822",
+  "v50_es_racha": false,
+  "v50_es_sostenida": true,
+  "peso_inundacion": 0.7,
+  "peso_viento": 0.3,
+  "vulnerabilidad": {
+    "subestacion": {
+      "inundacion": 1.0,
+      "viento": 0.4
+    },
+    "tower": {
+      "inundacion": 0.35,
+      "viento": 1.0
+    },
+    "pole": {
+      "inundacion": 0.55,
+      "viento": 0.75
+    },
+    "portal": {
+      "inundacion": 0.6,
+      "viento": 0.7
+    }
+  },
+  "criticidad_min": 0.75,
+  "criticidad_max": 1.25,
+  "normalizacion_viento": {
+    "formula": "H_viento = min(1, (V50/V_basica)^2)",
+    "V_basica_ms": 29.0,
+    "referencia": "zona C del CTE DB-SE-AE, la mas desfavorable de Espana"
+  },
+  "bajada_de_escala": {
+    "formula": "V50_activo = V50_celda * (v_GWA_activo / v_GWA_medio_celda)",
+    "supuesto": "el factor entre velocidad media y extremo de retorno es espacialmente uniforme dentro de la celda",
+    "razon_acotada_a": [
+      0.5,
+      2.0
+    ],
+    "activos_acotados": 235
+  },
+  "crs": {
+    "mediana": 11.891,
+    "media": 12.869,
+    "max": 89.197,
+    "percentiles": {
+      "50": 11.891,
+      "75": 14.114,
+      "90": 16.461,
+      "95": 18.71,
+      "99": 36.479
+    }
+  },
+  "sensibilidad_pesos": [
+    {
+      "peso_inundacion": 0.3,
+      "spearman": 0.9222,
+      "solape_top5_pct": 65.2
+    },
+    {
+      "peso_inundacion": 0.4,
+      "spearman": 0.9456,
+      "solape_top5_pct": 78.5
+    },
+    {
+      "peso_inundacion": 0.5,
+      "spearman": 0.9692,
+      "solape_top5_pct": 86.0
+    },
+    {
+      "peso_inundacion": 0.6,
+      "spearman": 0.9899,
+      "solape_top5_pct": 93.9
+    },
+    {
+      "peso_inundacion": 0.7,
+      "spearman": 1.0,
+      "solape_top5_pct": 100.0
+    },
+    {
+      "peso_inundacion": 0.8,
+      "spearman": 0.9794,
+      "solape_top5_pct": 80.1
+    }
+  ]
+}

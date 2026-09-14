@@ -1,0 +1,114 @@
+{
+  "ventana": {
+    "inicio": "2024-10-27",
+    "fin": "2024-11-04",
+    "dia_evento": "2024-10-29"
+  },
+  "estaciones": [
+    {
+      "indicativo": "8414A",
+      "nombre": "VALENCIA AEROPUERTO",
+      "dist_catadau_km": 30.5,
+      "racha_max_episodio_ms": 22.2,
+      "racha_max_episodio_kmh": 80.0,
+      "fecha_racha_max": "2024-10-29",
+      "racha_29oct_ms": 22.2,
+      "V50_estacion_ms": 36.0,
+      "fraccion_del_V50": 0.62
+    },
+    {
+      "indicativo": "8008Y",
+      "nombre": "VILLENA",
+      "dist_catadau_km": 76.1,
+      "racha_max_episodio_ms": 19.2,
+      "racha_max_episodio_kmh": 69.0,
+      "fecha_racha_max": "2024-10-29",
+      "racha_29oct_ms": 19.2,
+      "V50_estacion_ms": NaN,
+      "fraccion_del_V50": NaN
+    },
+    {
+      "indicativo": "8036Y",
+      "nombre": "BENIDORM",
+      "dist_catadau_km": 87.2,
+      "racha_max_episodio_ms": 18.1,
+      "racha_max_episodio_kmh": 65.0,
+      "fecha_racha_max": "2024-10-29",
+      "racha_29oct_ms": 18.1,
+      "V50_estacion_ms": NaN,
+      "fraccion_del_V50": NaN
+    },
+    {
+      "indicativo": "8500A",
+      "nombre": "CASTELLÓ - ALMASSORA",
+      "dist_catadau_km": 93.0,
+      "racha_max_episodio_ms": 19.2,
+      "racha_max_episodio_kmh": 69.0,
+      "fecha_racha_max": "2024-10-29",
+      "racha_29oct_ms": 19.2,
+      "V50_estacion_ms": 31.2,
+      "fraccion_del_V50": 0.61
+    },
+    {
+      "indicativo": "8025",
+      "nombre": "ALACANT/ALICANTE",
+      "dist_catadau_km": 96.3,
+      "racha_max_episodio_ms": 16.7,
+      "racha_max_episodio_kmh": 60.0,
+      "fecha_racha_max": "2024-10-29",
+      "racha_29oct_ms": 16.7,
+      "V50_estacion_ms": 27.4,
+      "fraccion_del_V50": 0.61
+    },
+    {
+      "indicativo": "7247X",
+      "nombre": "EL PINÓS/PINOSO",
+      "dist_catadau_km": 99.6,
+      "racha_max_episodio_ms": 17.5,
+      "racha_max_episodio_kmh": 63.0,
+      "fecha_racha_max": "2024-10-29",
+      "racha_29oct_ms": 17.5,
+      "V50_estacion_ms": NaN,
+      "fraccion_del_V50": NaN
+    },
+    {
+      "indicativo": "8019",
+      "nombre": "ALICANTE-ELCHE AEROPUERTO",
+      "dist_catadau_km": 105.8,
+      "racha_max_episodio_ms": 18.1,
+      "racha_max_episodio_kmh": 65.0,
+      "fecha_racha_max": "2024-10-29",
+      "racha_29oct_ms": 18.1,
+      "V50_estacion_ms": 34.0,
+      "fraccion_del_V50": 0.53
+    },
+    {
+      "indicativo": "7261X",
+      "nombre": "ROJALES",
+      "dist_catadau_km": 127.6,
+      "racha_max_episodio_ms": 16.4,
+      "racha_max_episodio_kmh": 59.0,
+      "fecha_racha_max": "2024-10-29",
+      "racha_29oct_ms": 16.4,
+      "V50_estacion_ms": 31.5,
+      "fraccion_del_V50": 0.52
+    },
+    {
+      "indicativo": "7244X",
+      "nombre": "ORIHUELA",
+      "dist_catadau_km": 133.4,
+      "racha_max_episodio_ms": 18.9,
+      "racha_max_episodio_kmh": 68.0,
+      "fecha_racha_max": "2024-10-28",
+      "racha_29oct_ms": 15.3,
+      "V50_estacion_ms": NaN,
+      "fraccion_del_V50": NaN
+    }
+  ],
+  "n_estaciones_menos_60km": 1,
+  "max_fraccion_del_V50_en_cercanas": 0.62,
+  "racha_maxima_del_periodo_completo_ms": 39.2,
+  "racha_maxima_del_periodo_fecha": "2004-11-30",
+  "racha_maxima_del_periodo_estacion": "7247X",
+  "conclusion": "el episodio de Catadau no fue capturado por las estaciones proximas, de modo que su no deteccion por el indice no es atribuible a la resolucion del producto de reanalisis empleado sino al caracter convectivo y local del fenomeno"
+}

@@ -1,0 +1,59 @@
+{
+  "radio_m": 6000,
+  "entornos": {
+    "Catadau": {
+      "evento": "mas de veinte apoyos derribados por viento",
+      "n_activos": 149,
+      "antes": {
+        "variable": "velocidad media anual del Global Wind Atlas",
+        "valor_ms": 4.293,
+        "valor_kmh": 15.5,
+        "percentil_en_el_conjunto": 63.4,
+        "H_viento_medio": 0.1432,
+        "CRS_mediano": 4.482,
+        "CRS_percentil_medio": 45.8,
+        "n_en_top5pct": 0,
+        "pct_en_top5pct": 0.0
+      },
+      "despues": {
+        "variable": "V50 sostenida de retorno a 50 anos, bajada de escala",
+        "valor_ms": 21.714,
+        "valor_kmh": 78.2,
+        "valor_sin_escalar_ms": 20.002,
+        "percentil_en_el_conjunto": 69.5,
+        "H_viento_medio": 0.4757,
+        "CRS_mediano": 11.27,
+        "CRS_percentil_medio": 41.7,
+        "n_en_top5pct": 0,
+        "pct_en_top5pct": 0.0
+      }
+    },
+    "Quart de Poblet": {
+      "evento": "subestacion anegada por inundacion",
+      "n_activos": 1012,
+      "antes": {
+        "variable": "velocidad media anual del Global Wind Atlas",
+        "valor_ms": 3.871,
+        "valor_kmh": 13.9,
+        "percentil_en_el_conjunto": 42.4,
+        "H_viento_medio": 0.1147,
+        "CRS_mediano": 5.807,
+        "CRS_percentil_medio": 68.1,
+        "n_en_top5pct": 71,
+        "pct_en_top5pct": 7.0
+      },
+      "despues": {
+        "variable": "V50 sostenida de retorno a 50 anos, bajada de escala",
+        "valor_ms": 20.366,
+        "valor_kmh": 73.3,
+        "valor_sin_escalar_ms": 20.564,
+        "percentil_en_el_conjunto": 47.9,
+        "H_viento_medio": 0.5029,
+        "CRS_mediano": 15.41,
+        "CRS_percentil_medio": 79.3,
+        "n_en_top5pct": 112,
+        "pct_en_top5pct": 11.1
+      }
+    }
+  }
+}

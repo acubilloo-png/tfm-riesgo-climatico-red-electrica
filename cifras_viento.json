@@ -1,0 +1,147 @@
+{
+  "distribuciones": {
+    "velocidad_media_gwa": {
+      "min": {
+        "ms": 0.745,
+        "kmh": 2.7
+      },
+      "mediana": {
+        "ms": 4.023,
+        "kmh": 14.5
+      },
+      "media": {
+        "ms": 4.117,
+        "kmh": 14.8
+      },
+      "p90": {
+        "ms": 5.242,
+        "kmh": 18.9
+      },
+      "p95": {
+        "ms": 5.725,
+        "kmh": 20.6
+      },
+      "p99": {
+        "ms": 7.227,
+        "kmh": 26.0
+      },
+      "max": {
+        "ms": 11.248,
+        "kmh": 40.5
+      }
+    },
+    "V50_escalado": {
+      "min": {
+        "ms": 9.583,
+        "kmh": 34.5
+      },
+      "mediana": {
+        "ms": 20.493,
+        "kmh": 73.8
+      },
+      "media": {
+        "ms": 20.458,
+        "kmh": 73.6
+      },
+      "p90": {
+        "ms": 24.366,
+        "kmh": 87.7
+      },
+      "p95": {
+        "ms": 25.915,
+        "kmh": 93.3
+      },
+      "p99": {
+        "ms": 31.156,
+        "kmh": 112.2
+      },
+      "max": {
+        "ms": 45.614,
+        "kmh": 164.2
+      }
+    },
+    "V50_sin_escalar": {
+      "min": {
+        "ms": 16.87,
+        "kmh": 60.7
+      },
+      "mediana": {
+        "ms": 20.227,
+        "kmh": 72.8
+      },
+      "media": {
+        "ms": 20.451,
+        "kmh": 73.6
+      },
+      "p90": {
+        "ms": 22.807,
+        "kmh": 82.1
+      },
+      "p95": {
+        "ms": 22.899,
+        "kmh": 82.4
+      },
+      "p99": {
+        "ms": 24.4,
+        "kmh": 87.8
+      },
+      "max": {
+        "ms": 24.554,
+        "kmh": 88.4
+      }
+    }
+  },
+  "superan_velocidad_basica_cte": {
+    "V50_escalado": {
+      "26.0": {
+        "n": 1877,
+        "pct": 4.82
+      },
+      "29.0": {
+        "n": 764,
+        "pct": 1.96
+      }
+    },
+    "V50_sin_escalar": {
+      "26.0": {
+        "n": 0,
+        "pct": 0.0
+      },
+      "29.0": {
+        "n": 0,
+        "pct": 0.0
+      }
+    }
+  },
+  "contraste_iec": {
+    "V50_escalado": {
+      "correlacion": 0.758,
+      "sesgo_medio_ms": 0.129,
+      "dispersion_ms": 3.134,
+      "razon_observada_mediana": 5.193,
+      "regla_iec": 5.0,
+      "conservadora": true
+    },
+    "V50_sin_escalar": {
+      "correlacion": 0.2843,
+      "sesgo_medio_ms": 0.136,
+      "dispersion_ms": 4.605,
+      "razon_observada_mediana": 5.134,
+      "regla_iec": 5.0,
+      "conservadora": true
+    }
+  },
+  "plausibilidad_fisica": {
+    "rango_sin_escalar_ms": [
+      16.87,
+      24.55
+    ],
+    "rango_escalado_ms": [
+      9.58,
+      45.61
+    ],
+    "n_mayor_35ms": 125,
+    "n_menor_12ms": 558,
+    "advertencia": "el escalado multiplicativo por exposicion amplia el rango muy por encima del que da el campo de origen. Un V50 sostenido de 45 m/s a 10 m no es creible en la Comunitat Valenciana: es un artefacto de multiplicar un extremo por una razon de vientos medios. La variante sin escalar acota a 24,6 m/s y no produce ningun activo con H_viento saturado. Ambas se conservan en el CSV para que la decision sea explicita."
+  }
+}

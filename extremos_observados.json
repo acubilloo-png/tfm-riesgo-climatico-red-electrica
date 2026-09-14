@@ -1,0 +1,173 @@
+{
+  "fuente": "AEMET OpenData, rachas maximas diarias observadas",
+  "periodo": "1985-2024",
+  "T_retorno": 50,
+  "criterios": {
+    "min_dias_anio": 300,
+    "min_anios": 20,
+    "percentil_umbral_pot": 99.5,
+    "hueco_desagrupamiento_dias": 3,
+    "n_bootstrap": 500
+  },
+  "convenio_forma": "Coles: F(z)=exp(-(1+xi*z)^(-1/xi)); xi>0 cola pesada, xi<0 cola acotada, xi=0 Gumbel. k de Hosking = -xi",
+  "n_estaciones_validas": 6,
+  "estaciones": [
+    {
+      "indicativo": "7261X",
+      "nombre": "ROJALES",
+      "n_anios": 26,
+      "anio_ini": 1992,
+      "anio_fin": 2024,
+      "maximo_observado_ms": 31.1,
+      "V50_gumbel_ms": 31.54,
+      "V50_gumbel_ic95": [
+        28.64,
+        34.01
+      ],
+      "V50_gev_ms": 31.49,
+      "V50_gev_ic95": [
+        28.03,
+        34.62
+      ],
+      "xi_gev": -0.0063,
+      "V50_pot_ms": 35.02,
+      "umbral_pot_ms": 21.4,
+      "xi_gpd": -0.1,
+      "n_picos_pot": 48
+    },
+    {
+      "indicativo": "8019",
+      "nombre": "ALICANTE-ELCHE AEROPUERTO",
+      "n_anios": 40,
+      "anio_ini": 1985,
+      "anio_fin": 2024,
+      "maximo_observado_ms": 35.6,
+      "V50_gumbel_ms": 34.03,
+      "V50_gumbel_ic95": [
+        31.04,
+        37.16
+      ],
+      "V50_gev_ms": 34.41,
+      "V50_gev_ic95": [
+        30.12,
+        37.95
+      ],
+      "xi_gev": 0.042,
+      "V50_pot_ms": 33.61,
+      "umbral_pot_ms": 23.6,
+      "xi_gpd": -0.15,
+      "n_picos_pot": 57
+    },
+    {
+      "indicativo": "8025",
+      "nombre": "ALACANT/ALICANTE",
+      "n_anios": 40,
+      "anio_ini": 1985,
+      "anio_fin": 2024,
+      "maximo_observado_ms": 31.1,
+      "V50_gumbel_ms": 27.38,
+      "V50_gumbel_ic95": [
+        24.58,
+        30.72
+      ],
+      "V50_gev_ms": 29.14,
+      "V50_gev_ic95": [
+        24.78,
+        33.32
+      ],
+      "xi_gev": 0.2206,
+      "V50_pot_ms": 28.73,
+      "umbral_pot_ms": 18.6,
+      "xi_gpd": 0.1247,
+      "n_picos_pot": 59
+    },
+    {
+      "indicativo": "8414A",
+      "nombre": "VALENCIA AEROPUERTO",
+      "n_anios": 39,
+      "anio_ini": 1985,
+      "anio_fin": 2024,
+      "maximo_observado_ms": 36.1,
+      "V50_gumbel_ms": 35.99,
+      "V50_gumbel_ic95": [
+        32.74,
+        38.47
+      ],
+      "V50_gev_ms": 36.34,
+      "V50_gev_ic95": [
+        32.61,
+        38.78
+      ],
+      "xi_gev": 0.0358,
+      "V50_pot_ms": 36.65,
+      "umbral_pot_ms": 24.7,
+      "xi_gpd": -0.1736,
+      "n_picos_pot": 52
+    },
+    {
+      "indicativo": "8416",
+      "nombre": "VALČNCIA",
+      "n_anios": 26,
+      "anio_ini": 1985,
+      "anio_fin": 2011,
+      "maximo_observado_ms": 32.5,
+      "V50_gumbel_ms": 29.56,
+      "V50_gumbel_ic95": [
+        26.04,
+        33.42
+      ],
+      "V50_gev_ms": 30.85,
+      "V50_gev_ic95": [
+        25.73,
+        35.7
+      ],
+      "xi_gev": 0.1689,
+      "V50_pot_ms": 29.99,
+      "umbral_pot_ms": 20.8,
+      "xi_gpd": 0.0114,
+      "n_picos_pot": 40
+    },
+    {
+      "indicativo": "8500A",
+      "nombre": "CASTELLÓ - ALMASSORA",
+      "n_anios": 40,
+      "anio_ini": 1985,
+      "anio_fin": 2024,
+      "maximo_observado_ms": 30.0,
+      "V50_gumbel_ms": 31.25,
+      "V50_gumbel_ic95": [
+        29.03,
+        33.23
+      ],
+      "V50_gev_ms": 30.0,
+      "V50_gev_ic95": [
+        27.33,
+        32.14
+      ],
+      "xi_gev": -0.1531,
+      "V50_pot_ms": 29.45,
+      "umbral_pot_ms": 20.8,
+      "xi_gpd": -0.1492,
+      "n_picos_pot": 58
+    }
+  ],
+  "medianas_entre_estaciones": {
+    "gumbel": 31.395,
+    "gev": 31.17,
+    "pot": 31.8
+  },
+  "desviacion_pct_frente_a_gumbel": {
+    "gumbel": 0.0,
+    "gev": -0.72,
+    "pot": 1.29
+  },
+  "desviacion_maxima_pct": 1.29,
+  "criterio_15pct_superado": false,
+  "xi_gev": {
+    "mediana": 0.0389,
+    "min": -0.1531,
+    "max": 0.2206,
+    "n_cerca_de_cero": 3,
+    "gumbel_justificada": true
+  }
+}

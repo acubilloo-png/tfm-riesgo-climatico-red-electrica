@@ -1,0 +1,40 @@
+# Versiones exactas con las que se ejecutó el piloto.
+# Comprobadas contra el entorno que produjo los resultados: los once paquetes se
+# instalaron el 07/08/2026 entre las 12:49:30 y las 12:50:08, y todos los
+# artefactos del modelo son posteriores a esa hora, sin reinstalaciones después.
+#
+# Python 3.12.10
+#
+#   py -3.12 -m venv .venv
+#   .venv\Scripts\activate        (Windows)
+#   source .venv/bin/activate     (Linux/macOS)
+#   pip install -r requirements.txt
+
+# --- Datos y cálculo numérico ----------------------------------------------
+numpy==2.4.6
+pandas==3.0.5
+scipy==1.18.0
+
+# --- Geoespacial ------------------------------------------------------------
+geopandas==1.1.4
+shapely==2.1.2
+pyproj==3.7.2
+rasterio==1.5.0
+netCDF4==1.7.4
+
+# --- Aprendizaje automático y explicabilidad --------------------------------
+scikit-learn==1.9.0
+xgboost==3.4.0
+shap==0.52.0
+
+# --- Figuras ----------------------------------------------------------------
+matplotlib==3.11.1
+pillow==12.3.0
+
+# --- Descarga de fuentes ----------------------------------------------------
+requests==2.34.2
+urllib3==2.7.0
+
+# --- Generación y revisión del documento ------------------------------------
+python-docx==1.2.0
+lxml==6.1.1

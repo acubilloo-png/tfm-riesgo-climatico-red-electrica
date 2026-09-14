@@ -1,0 +1,98 @@
+{
+  "n_activos": 38939,
+  "positivos": 3912,
+  "tasa_positivos": 0.10046482960528005,
+  "predictores": [
+    "altitud_m",
+    "pendiente_grados",
+    "distancia_cauce_m",
+    "densidad_5km",
+    "velocidad_viento_ms",
+    "clase_pole",
+    "clase_portal",
+    "clase_subestacion",
+    "clase_tower"
+  ],
+  "excluidas": {
+    "nivel_peligrosidad_patricova": "es la fuente de la etiqueta",
+    "peligrosidad_ordinal": "derivada del nivel PATRICOVA",
+    "dentro_zona_inundable": "es la etiqueta",
+    "distancia_zona_inundable_m": "calculada contra los poligonos de PATRICOVA: fuga directa",
+    "CRS": "contiene la peligrosidad de inundacion por construccion",
+    "H_inundacion": "derivada de PATRICOVA",
+    "lat": "permite memorizar la ubicacion en lugar de aprender la fisica",
+    "lon": "permite memorizar la ubicacion en lugar de aprender la fisica",
+    "provincia": "idem, a escala mas gruesa"
+  },
+  "lado_bloque_m": 10000,
+  "n_bloques": 249,
+  "n_pliegues": 5,
+  "cv_espacial": {
+    "Random Forest": {
+      "roc_auc": 0.8406367540042019,
+      "roc_auc_std": 0.03483832197938633,
+      "pr_auc": 0.4975795477381969,
+      "pr_auc_std": 0.1261910313834427,
+      "n_pliegues": 5
+    },
+    "XGBoost": {
+      "roc_auc": 0.8200740722151811,
+      "roc_auc_std": 0.044290084381036154,
+      "pr_auc": 0.46506152730611944,
+      "pr_auc_std": 0.13285166766678597,
+      "n_pliegues": 5
+    }
+  },
+  "cv_aleatoria": {
+    "Random Forest": {
+      "roc_auc": 0.9481776993089192,
+      "roc_auc_std": 0.005450877940628242,
+      "pr_auc": 0.8114305356041267,
+      "pr_auc_std": 0.012390637395963152,
+      "n_pliegues": 5
+    },
+    "XGBoost": {
+      "roc_auc": 0.9469911916802889,
+      "roc_auc_std": 0.00436857650136539,
+      "pr_auc": 0.8031067493970925,
+      "pr_auc_std": 0.014411341138249475,
+      "n_pliegues": 5
+    }
+  },
+  "umbral_f1": 0.6014295220375061,
+  "precision": 0.4988035097048657,
+  "sensibilidad": 0.47955010224948874,
+  "f1": 0.4889873582692558,
+  "matriz_confusion": [
+    [
+      33142,
+      1885
+    ],
+    [
+      2036,
+      1876
+    ]
+  ],
+  "importancia_xgboost": {
+    "altitud_m": 0.23352082073688507,
+    "velocidad_viento_ms": 0.1219777911901474,
+    "distancia_cauce_m": 0.11232927441596985,
+    "densidad_5km": 0.10678824782371521,
+    "clase_tower": 0.09492546319961548,
+    "clase_pole": 0.09491723775863647,
+    "clase_portal": 0.09462171047925949,
+    "pendiente_grados": 0.08603129535913467,
+    "clase_subestacion": 0.05488815903663635
+  },
+  "shap_medias_abs": {
+    "altitud_m": 1.5982861518859863,
+    "velocidad_viento_ms": 0.9696250557899475,
+    "distancia_cauce_m": 0.8209119439125061,
+    "densidad_5km": 0.7326045036315918,
+    "pendiente_grados": 0.5063198804855347,
+    "clase_pole": 0.11899400502443314,
+    "clase_tower": 0.049200642853975296,
+    "clase_portal": 0.013125039637088776,
+    "clase_subestacion": 0.004055371042340994
+  }
+}

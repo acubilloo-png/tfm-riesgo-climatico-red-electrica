@@ -1,0 +1,70 @@
+{
+  "peso_inundacion": 0.6,
+  "peso_viento": 0.4,
+  "vulnerabilidad": {
+    "subestacion": {
+      "inundacion": 1.0,
+      "viento": 0.4
+    },
+    "tower": {
+      "inundacion": 0.35,
+      "viento": 1.0
+    },
+    "pole": {
+      "inundacion": 0.55,
+      "viento": 0.75
+    },
+    "portal": {
+      "inundacion": 0.6,
+      "viento": 0.7
+    }
+  },
+  "criticidad_min": 0.75,
+  "criticidad_max": 1.25,
+  "radio_criticidad_m": 5000,
+  "escala_proximidad_m": 500.0,
+  "peso_proximidad": 0.1,
+  "n_activos": 38939,
+  "crs_media": 5.465445653195569,
+  "crs_mediana": 4.791680745783281,
+  "crs_max": 72.84234387304235,
+  "percentiles": {
+    "50": 4.791680745783281,
+    "75": 6.032201427191367,
+    "90": 7.637196822017877,
+    "95": 10.453095458215644,
+    "99": 24.0377591962921
+  },
+  "sensibilidad_pesos": [
+    {
+      "peso_inundacion": 0.3,
+      "spearman": 0.9201,
+      "solape_top5_pct": 69.7
+    },
+    {
+      "peso_inundacion": 0.4,
+      "spearman": 0.9569,
+      "solape_top5_pct": 85.4
+    },
+    {
+      "peso_inundacion": 0.5,
+      "spearman": 0.9867,
+      "solape_top5_pct": 92.4
+    },
+    {
+      "peso_inundacion": 0.6,
+      "spearman": 1.0,
+      "solape_top5_pct": 100.0
+    },
+    {
+      "peso_inundacion": 0.7,
+      "spearman": 0.9785,
+      "solape_top5_pct": 87.9
+    },
+    {
+      "peso_inundacion": 0.8,
+      "spearman": 0.8953,
+      "solape_top5_pct": 78.9
+    }
+  ]
+}

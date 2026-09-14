@@ -1,0 +1,293 @@
+{
+  "variables": [
+    "H_inundacion",
+    "H_viento_nuevo",
+    "densidad_5km"
+  ],
+  "semilla": 42,
+  "nota": "se calculan los dos subconjuntos porque la cifra de control de la version V5 (k=4, silhouette 0,519, un perfil de 27 subestaciones) solo se reproduce sobre las 608 subestaciones, no sobre los 38.939 activos",
+  "subconjuntos": {
+    "subestaciones": {
+      "n": 608,
+      "barrido": [
+        {
+          "k": 2,
+          "inercia": 1291.375725073842,
+          "silhouette": 0.4066
+        },
+        {
+          "k": 3,
+          "inercia": 816.4566994266054,
+          "silhouette": 0.4206
+        },
+        {
+          "k": 4,
+          "inercia": 513.985249471898,
+          "silhouette": 0.4736
+        },
+        {
+          "k": 5,
+          "inercia": 417.20953129371736,
+          "silhouette": 0.4441
+        },
+        {
+          "k": 6,
+          "inercia": 343.7870206696855,
+          "silhouette": 0.4789
+        },
+        {
+          "k": 7,
+          "inercia": 258.5551960601936,
+          "silhouette": 0.5127
+        },
+        {
+          "k": 8,
+          "inercia": 207.97096676263496,
+          "silhouette": 0.5072
+        },
+        {
+          "k": 9,
+          "inercia": 168.45825326587135,
+          "silhouette": 0.506
+        },
+        {
+          "k": 10,
+          "inercia": 150.16092189624922,
+          "silhouette": 0.5113
+        },
+        {
+          "k": 11,
+          "inercia": 134.88122151564136,
+          "silhouette": 0.4685
+        },
+        {
+          "k": 12,
+          "inercia": 122.7822874649184,
+          "silhouette": 0.4371
+        },
+        {
+          "k": 13,
+          "inercia": 115.38282742372607,
+          "silhouette": 0.4383
+        },
+        {
+          "k": 14,
+          "inercia": 106.07143150860017,
+          "silhouette": 0.44
+        },
+        {
+          "k": 15,
+          "inercia": 100.37056453439412,
+          "silhouette": 0.4201
+        }
+      ],
+      "k_optimo": 7,
+      "silhouette": 0.5127
+    },
+    "todos_los_activos": {
+      "n": 38939,
+      "barrido": [
+        {
+          "k": 2,
+          "inercia": 85805.75290039043,
+          "silhouette": 0.6647
+        },
+        {
+          "k": 3,
+          "inercia": 59854.918339605814,
+          "silhouette": 0.3898
+        },
+        {
+          "k": 4,
+          "inercia": 37287.026953499604,
+          "silhouette": 0.4316
+        },
+        {
+          "k": 5,
+          "inercia": 28847.84694769311,
+          "silhouette": 0.4234
+        },
+        {
+          "k": 6,
+          "inercia": 24021.227220723373,
+          "silhouette": 0.4144
+        },
+        {
+          "k": 7,
+          "inercia": 19671.425857366583,
+          "silhouette": 0.4176
+        },
+        {
+          "k": 8,
+          "inercia": 17104.34280182326,
+          "silhouette": 0.3613
+        },
+        {
+          "k": 9,
+          "inercia": 15346.971110656797,
+          "silhouette": 0.3565
+        },
+        {
+          "k": 10,
+          "inercia": 13647.050396995319,
+          "silhouette": 0.3689
+        },
+        {
+          "k": 11,
+          "inercia": 12576.294243389559,
+          "silhouette": 0.3681
+        },
+        {
+          "k": 12,
+          "inercia": 11395.871684031474,
+          "silhouette": 0.3793
+        },
+        {
+          "k": 13,
+          "inercia": 10311.45322559562,
+          "silhouette": 0.3776
+        },
+        {
+          "k": 14,
+          "inercia": 9523.522905144097,
+          "silhouette": 0.3761
+        },
+        {
+          "k": 15,
+          "inercia": 8858.438208931871,
+          "silhouette": 0.3772
+        }
+      ],
+      "k_optimo": 2,
+      "silhouette": 0.6647
+    }
+  },
+  "tabla": [
+    {
+      "subconjunto": "subestaciones",
+      "perfil": 1,
+      "n": 8,
+      "n_subestaciones": 8,
+      "pct_inundable": 100.0,
+      "V50_medio_ms": 19.58,
+      "H_viento_medio": 0.4889,
+      "densidad_media": 478.2,
+      "CRS_mediano": 74.97,
+      "CRS_max": 89.2,
+      "pct_dominante_viento": 0.0,
+      "provincia_dominante": "Valencia"
+    },
+    {
+      "subconjunto": "subestaciones",
+      "perfil": 2,
+      "n": 20,
+      "n_subestaciones": 20,
+      "pct_inundable": 100.0,
+      "V50_medio_ms": 18.82,
+      "H_viento_medio": 0.4654,
+      "densidad_media": 215.3,
+      "CRS_mediano": 19.63,
+      "CRS_max": 43.48,
+      "pct_dominante_viento": 0.0,
+      "provincia_dominante": "Valencia"
+    },
+    {
+      "subconjunto": "subestaciones",
+      "perfil": 3,
+      "n": 27,
+      "n_subestaciones": 27,
+      "pct_inundable": 51.9,
+      "V50_medio_ms": 22.5,
+      "H_viento_medio": 0.4785,
+      "densidad_media": 1363.7,
+      "CRS_mediano": 9.37,
+      "CRS_max": 15.63,
+      "pct_dominante_viento": 85.2,
+      "provincia_dominante": "Castellón"
+    },
+    {
+      "subconjunto": "subestaciones",
+      "perfil": 4,
+      "n": 148,
+      "n_subestaciones": 148,
+      "pct_inundable": 18.9,
+      "V50_medio_ms": 21.27,
+      "H_viento_medio": 0.4976,
+      "densidad_media": 741.1,
+      "CRS_mediano": 9.18,
+      "CRS_max": 14.67,
+      "pct_dominante_viento": 95.3,
+      "provincia_dominante": "Valencia"
+    },
+    {
+      "subconjunto": "subestaciones",
+      "perfil": 5,
+      "n": 48,
+      "n_subestaciones": 48,
+      "pct_inundable": 0.0,
+      "V50_medio_ms": 23.3,
+      "H_viento_medio": 0.5885,
+      "densidad_media": 267.3,
+      "CRS_mediano": 7.18,
+      "CRS_max": 12.69,
+      "pct_dominante_viento": 100.0,
+      "provincia_dominante": "Castellón"
+    },
+    {
+      "subconjunto": "subestaciones",
+      "perfil": 6,
+      "n": 214,
+      "n_subestaciones": 214,
+      "pct_inundable": 8.4,
+      "V50_medio_ms": 20.92,
+      "H_viento_medio": 0.4925,
+      "densidad_media": 157.2,
+      "CRS_mediano": 6.14,
+      "CRS_max": 12.48,
+      "pct_dominante_viento": 90.2,
+      "provincia_dominante": "Valencia"
+    },
+    {
+      "subconjunto": "subestaciones",
+      "perfil": 7,
+      "n": 143,
+      "n_subestaciones": 143,
+      "pct_inundable": 2.1,
+      "V50_medio_ms": 18.75,
+      "H_viento_medio": 0.4055,
+      "densidad_media": 119.7,
+      "CRS_mediano": 5.22,
+      "CRS_max": 10.54,
+      "pct_dominante_viento": 88.1,
+      "provincia_dominante": "Alicante"
+    },
+    {
+      "subconjunto": "todos_los_activos",
+      "perfil": 1,
+      "n": 1295,
+      "n_subestaciones": 14,
+      "pct_inundable": 100.0,
+      "V50_medio_ms": 21.13,
+      "H_viento_medio": 0.5066,
+      "densidad_media": 522.5,
+      "CRS_mediano": 32.98,
+      "CRS_max": 89.2,
+      "pct_dominante_viento": 11.6,
+      "provincia_dominante": "Valencia"
+    },
+    {
+      "subconjunto": "todos_los_activos",
+      "perfil": 2,
+      "n": 37644,
+      "n_subestaciones": 594,
+      "pct_inundable": 7.0,
+      "V50_medio_ms": 20.43,
+      "H_viento_medio": 0.4991,
+      "densidad_media": 358.8,
+      "CRS_mediano": 11.79,
+      "CRS_max": 25.49,
+      "pct_dominante_viento": 99.7,
+      "provincia_dominante": "Castellón"
+    }
+  ]
+}

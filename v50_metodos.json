@@ -1,0 +1,79 @@
+{
+  "fuente": "Pryor y Barthelmie (2021), Zenodo 10.5281/zenodo.4306822, CC-BY-4.0",
+  "motivo_plan_b": "la API del CDS exige clave personal registrada, no configurada en la maquina; el encargo admite el registro como motivo para el plan B",
+  "variable": "nivel de retorno a 50 anos de la velocidad SOSTENIDA a 10 m derivada de ERA5; no es una racha",
+  "rejilla": {
+    "forma": [
+      681,
+      1440
+    ],
+    "paso_grados": 0.25,
+    "convenio": "lat 85 a -85 descendente, lon 0 a 360 (ERA5)",
+    "determinado": "empiricamente, por correlacion con el GWA"
+  },
+  "problema_coordenadas": "las variables Latitude y Longitude del fichero no contienen grados sino, aparentemente, medias por fila y columna de un campo de viento; la rejilla se dedujo de la forma del campo",
+  "celdas_comunitat": 117,
+  "celdas_con_activos": 56,
+  "metodo_adoptado": "U50_Gumbel_MLE",
+  "metodos": {
+    "U50_Gumbel_MoM": {
+      "n_celdas": 117,
+      "min": 16.564,
+      "mediana": 21.774,
+      "media": 22.548,
+      "max": 28.725
+    },
+    "U50_Gumbel_MLE": {
+      "n_celdas": 117,
+      "min": 15.93,
+      "mediana": 20.694,
+      "media": 21.502,
+      "max": 27.479
+    },
+    "U50_Gumbel_plot": {
+      "n_celdas": 117,
+      "min": 16.592,
+      "mediana": 21.832,
+      "media": 22.621,
+      "max": 28.87
+    },
+    "U50_Weibull": {
+      "n_celdas": 117,
+      "min": 15.809,
+      "mediana": 23.428,
+      "media": 23.841,
+      "max": 30.111
+    }
+  },
+  "desviacion_medianas_pct": {
+    "U50_Gumbel_MoM": 5.22,
+    "U50_Gumbel_MLE": 0.0,
+    "U50_Gumbel_plot": 5.5,
+    "U50_Weibull": 13.21
+  },
+  "desviacion_maxima_pct": 13.21,
+  "criterio_15pct_superado": false,
+  "concordancia_espacial": {
+    "U50_Gumbel_MoM": {
+      "r": 0.9956,
+      "sesgo_ms": 1.047
+    },
+    "U50_Gumbel_plot": {
+      "r": 0.9961,
+      "sesgo_ms": 1.12
+    },
+    "U50_Weibull": {
+      "r": 0.797,
+      "sesgo_ms": 2.339
+    }
+  },
+  "celdas_alta_incertidumbre": 0,
+  "v50_bruto_activos": {
+    "min": 16.87,
+    "mediana": 20.227,
+    "media": 20.451,
+    "max": 24.554,
+    "r_con_gwa": 0.2843
+  },
+  "nota_tarea2": "no es posible reajustar Gumbel/GEV/POT por celda: el atlas no distribuye maximos anuales. Se comparan las cuatro estimaciones publicadas. El ajuste propio se hara sobre rachas observadas de AEMET en el script 03."
+}

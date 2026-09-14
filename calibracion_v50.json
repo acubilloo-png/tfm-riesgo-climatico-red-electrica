@@ -1,0 +1,126 @@
+{
+  "n_estaciones": 6,
+  "estaciones": [
+    {
+      "indicativo": "7261X",
+      "nombre": "ROJALES",
+      "provincia": "ALICANTE",
+      "n_anios": 26,
+      "lat": 38.0881,
+      "lon": -0.7153,
+      "V50_gumbel_ms": 31.54,
+      "V50_pryor_sostenida": 19.1375,
+      "V50_pryor_escalada": 17.722,
+      "razon_exposicion": 0.926,
+      "factor_racha_bruto": 1.6481,
+      "factor_racha_escalado": 1.7797
+    },
+    {
+      "indicativo": "8019",
+      "nombre": "ALICANTE-ELCHE AEROPUERTO",
+      "provincia": "ALICANTE",
+      "n_anios": 40,
+      "lat": 38.2828,
+      "lon": -0.5708,
+      "V50_gumbel_ms": 34.03,
+      "V50_pryor_sostenida": 20.591,
+      "V50_pryor_escalada": 18.2,
+      "razon_exposicion": 0.8839,
+      "factor_racha_bruto": 1.6527,
+      "factor_racha_escalado": 1.8698
+    },
+    {
+      "indicativo": "8025",
+      "nombre": "ALACANT/ALICANTE",
+      "provincia": "ALICANTE",
+      "n_anios": 40,
+      "lat": 38.3725,
+      "lon": -0.4942,
+      "V50_gumbel_ms": 27.38,
+      "V50_pryor_sostenida": 20.591,
+      "V50_pryor_escalada": 16.6683,
+      "razon_exposicion": 0.8095,
+      "factor_racha_bruto": 1.3297,
+      "factor_racha_escalado": 1.6426
+    },
+    {
+      "indicativo": "8414A",
+      "nombre": "VALENCIA AEROPUERTO",
+      "provincia": "VALENCIA",
+      "n_anios": 39,
+      "lat": 39.485,
+      "lon": -0.4747,
+      "V50_gumbel_ms": 35.99,
+      "V50_pryor_sostenida": 20.5645,
+      "V50_pryor_escalada": 20.9322,
+      "razon_exposicion": 1.0179,
+      "factor_racha_bruto": 1.7501,
+      "factor_racha_escalado": 1.7194
+    },
+    {
+      "indicativo": "8416",
+      "nombre": "VALČNCIA",
+      "provincia": "VALENCIA",
+      "n_anios": 26,
+      "lat": 39.4806,
+      "lon": -0.3664,
+      "V50_gumbel_ms": 29.56,
+      "V50_pryor_sostenida": 21.4445,
+      "V50_pryor_escalada": 16.1606,
+      "razon_exposicion": 0.7536,
+      "factor_racha_bruto": 1.3784,
+      "factor_racha_escalado": 1.8291
+    },
+    {
+      "indicativo": "8500A",
+      "nombre": "CASTELLÓ - ALMASSORA",
+      "provincia": "CASTELLON",
+      "n_anios": 40,
+      "lat": 39.9572,
+      "lon": -0.0719,
+      "V50_gumbel_ms": 31.25,
+      "V50_pryor_sostenida": 20.0608,
+      "V50_pryor_escalada": 21.1896,
+      "razon_exposicion": 1.0563,
+      "factor_racha_bruto": 1.5578,
+      "factor_racha_escalado": 1.4748
+    }
+  ],
+  "factor_racha": {
+    "mediano_bruta": 1.6029,
+    "mediano_escalada": 1.7495,
+    "cv_bruta": 0.1037,
+    "cv_escalada": 0.0824,
+    "rango_literatura": [
+      1.4,
+      1.6
+    ],
+    "bruta_en_rango": false,
+    "escalada_en_rango": false
+  },
+  "falsacion": {
+    "racha_maxima_observada_ms": 39.2,
+    "racha_maxima_observada_kmh": 141.1,
+    "estacion": "7247X",
+    "fecha": "2004-11-30",
+    "factor_aplicado": 1.4,
+    "variantes": {
+      "bruta": {
+        "V50_max_ms": 24.55,
+        "racha_implicada_max_ms": 34.38,
+        "racha_implicada_max_kmh": 123.8,
+        "n_activos_imposibles": 0,
+        "pct_activos_imposibles": 0.0
+      },
+      "escalada": {
+        "V50_max_ms": 45.61,
+        "racha_implicada_max_ms": 63.86,
+        "racha_implicada_max_kmh": 229.9,
+        "n_activos_imposibles": 986,
+        "pct_activos_imposibles": 2.53
+      }
+    }
+  },
+  "decision": "bruta",
+  "motivo": "la variante escalada produce 986 activos con racha implicada superior a la maxima observada en el territorio, lo que es fisicamente imposible; la bruta no produce ninguno"
+}

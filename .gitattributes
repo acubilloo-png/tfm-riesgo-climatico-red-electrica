@@ -1,0 +1,12 @@
+# Normaliza los finales de línea: LF dentro del repositorio, el nativo del
+# sistema en el disco. Evita que un mismo fichero aparezca como modificado solo
+# por editarse en Windows y en Linux.
+* text=auto
+
+# Binarios: git no debe intentar normalizarlos nunca.
+*.png binary
+*.jpg binary
+*.npz binary
+*.npy binary
+*.docx binary
+*.tif binary
